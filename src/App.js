@@ -1,0 +1,24 @@
+import './App.css';
+import FloatingDecorations from './components/FloatingDecorations';
+import GoldenLights from './components/GoldenLights';
+import FloatingDesigns from './components/FloatingDesigns';
+import BirthdayCard from './components/BirthdayCard';
+import FlipCardsSection from './components/FlipCardsSection';
+
+function App() {
+  return (
+    <div className="birthday-card">
+      <FloatingDecorations />
+      <GoldenLights />
+      <FloatingDesigns />
+      <section className="first-module">
+        <BirthdayCard />
+      </section>
+      <section className="second-module">
+        <FlipCardsSection />
+      </section>
+    </div>
+  );
+}
+
+export default App;
