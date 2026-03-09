@@ -4,6 +4,7 @@ import GoldenLights from './components/GoldenLights';
 import FloatingDesigns from './components/FloatingDesigns';
 import BirthdayCard from './components/BirthdayCard';
 import FlipCardsSection from './components/FlipCardsSection';
+import GiftBox from './components/GiftBox';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       </section>
       <section className="second-module">
         <FlipCardsSection />
+      </section>
+      <section className="third-module">
+        <GiftBox />
       </section>
     </div>
   );

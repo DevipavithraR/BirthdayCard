@@ -612,6 +612,380 @@
   width: 100%;
 }
 
+/* Third module - gift box as individual page (like card and photo cards) */
+.third-module {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.gift-box-page {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-box-page-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b84d6a;
+  margin: 0 0 2rem;
+  text-align: center;
+}
+
+/* Gift box - full-page section, same standard as card & flip cards */
+.gift-box-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+}
+
+/* Card-style container for gift - matches .card-border look */
+.gift-box-card {
+  position: relative;
+  background: linear-gradient(145deg, #ffffff 0%, #fff8fa 50%, #ffe8ef 100%);
+  border-radius: 28px;
+  padding: 2.5rem 2rem 2rem;
+  box-shadow:
+    0 20px 60px rgba(255, 182, 193, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 182, 193, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.gift-card-sparkle {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1rem;
+  color: #f4d03f;
+  opacity: 0.85;
+  animation: giftDecorTwinkle 2s ease-in-out infinite;
+}
+
+.gift-card-heart {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 0.9rem;
+  color: #ff9aad;
+  opacity: 0.8;
+  animation: giftDecorTwinkle 2s ease-in-out infinite 0.5s;
+}
+
+@keyframes giftDecorTwinkle {
+  0%, 100% { opacity: 0.5; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.gift-box-hint {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.8rem;
+  color: #8b5a6b;
+  margin: 0.75rem 0 0;
+  opacity: 0.9;
+}
+
+/* Closed gift box - modern rounded style, same shadow language as card */
+.gift-box-closed {
+  position: relative;
+  width: 280px;
+  height: 260px;
+}
+
+/* Box body - soft gradient, soft shadow like card */
+.gift-body {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 140px;
+  background: linear-gradient(180deg, #f5a5b5 0%, #e88a9e 35%, #c75d7a 70%, #b84d6a 100%);
+  border-radius: 0 0 16px 16px;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.35),
+    0 16px 48px rgba(199, 93, 122, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+/* Lid - rounded, soft highlight */
+.gift-lid {
+  position: absolute;
+  bottom: 132px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 212px;
+  height: 48px;
+  background: linear-gradient(180deg, #fff0f5 0%, #f5a5b5 30%, #e88a9e 70%, #c75d7a 100%);
+  border-radius: 16px 16px 0 0;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.5),
+    0 8px 24px rgba(199, 93, 122, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Ribbon - white with subtle pink tint, soft shadow */
+.gift-ribbon-h {
+  position: absolute;
+  bottom: 144px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 212px;
+  height: 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #fff8fa 50%, #ffe4ec 100%);
+  border-radius: 6px;
+  box-shadow:
+    0 2px 8px rgba(199, 93, 122, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.gift-ribbon-v {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 140px;
+  background: linear-gradient(180deg, #ffffff 0%, #fff8fa 50%, #ffe4ec 100%);
+  border-radius: 6px;
+  box-shadow:
+    0 2px 8px rgba(199, 93, 122, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Bow - soft white with subtle sheen */
+.gift-bow {
+  position: absolute;
+  bottom: 156px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 56px;
+}
+
+.gift-bow-loop {
+  position: absolute;
+  width: 40px;
+  height: 48px;
+  background: linear-gradient(135deg, #ffffff 0%, #fff8fa 40%, #ffe4ec 100%);
+  border-radius: 50%;
+  box-shadow:
+    0 6px 20px rgba(199, 93, 122, 0.15),
+    inset 0 2px 0 rgba(255, 255, 255, 0.95);
+}
+
+.gift-bow-l {
+  left: 0;
+  top: 0;
+  transform: rotate(-20deg);
+}
+
+.gift-bow-r {
+  right: 0;
+  left: auto;
+  top: 0;
+  transform: rotate(20deg);
+}
+
+.gift-bow-center {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle at 30% 30%, #fff, #fff8fa);
+  border-radius: 50%;
+  box-shadow:
+    0 2px 8px rgba(199, 93, 122, 0.12),
+    inset 0 2px 0 rgba(255, 255, 255, 0.95);
+}
+
+/* Open button - same style as card theme (rounded, soft shadow, border) */
+.gift-box-open-btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(145deg, #e88a9e 0%, #c75d7a 50%, #b84d6a 100%);
+  border: none;
+  border-radius: 28px;
+  box-shadow:
+    0 8px 24px rgba(199, 93, 122, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gift-box-open-btn:hover {
+  transform: scale(1.04);
+  box-shadow:
+    0 12px 32px rgba(199, 93, 122, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+.gift-box-open-btn:active {
+  transform: scale(0.98);
+}
+
+/* Reveal state - same card style */
+.gift-reveal-card {
+  padding: 2.5rem 2rem;
+}
+
+.gift-reveal-card .gift-reveal {
+  min-height: 200px;
+}
+
+/* Gift reveal - Love you with sparkles and hearts */
+.gift-reveal {
+  position: relative;
+  padding: 2rem 3rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-reveal-sparkles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.reveal-sparkle {
+  position: absolute;
+  font-size: 1rem;
+  color: #f4d03f;
+  opacity: 0.9;
+  animation: revealSparkle 1.5s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.06s);
+  text-shadow: 0 0 8px rgba(244, 208, 63, 0.8);
+}
+
+.reveal-sparkle:nth-child(1) { top: 5%; left: 10%; }
+.reveal-sparkle:nth-child(2) { top: 8%; left: 25%; }
+.reveal-sparkle:nth-child(3) { top: 12%; right: 20%; left: auto; }
+.reveal-sparkle:nth-child(4) { top: 15%; right: 8%; left: auto; }
+.reveal-sparkle:nth-child(5) { top: 25%; left: 5%; }
+.reveal-sparkle:nth-child(6) { top: 30%; left: 22%; }
+.reveal-sparkle:nth-child(7) { top: 28%; right: 25%; left: auto; }
+.reveal-sparkle:nth-child(8) { top: 35%; right: 5%; left: auto; }
+.reveal-sparkle:nth-child(9) { top: 45%; left: 8%; }
+.reveal-sparkle:nth-child(10) { top: 50%; left: 28%; }
+.reveal-sparkle:nth-child(11) { top: 48%; right: 22%; left: auto; }
+.reveal-sparkle:nth-child(12) { top: 52%; right: 8%; left: auto; }
+.reveal-sparkle:nth-child(13) { top: 62%; left: 12%; }
+.reveal-sparkle:nth-child(14) { top: 68%; left: 30%; }
+.reveal-sparkle:nth-child(15) { top: 65%; right: 18%; left: auto; }
+.reveal-sparkle:nth-child(16) { top: 72%; right: 6%; left: auto; }
+.reveal-sparkle:nth-child(17) { top: 78%; left: 15%; }
+.reveal-sparkle:nth-child(18) { top: 82%; left: 35%; }
+.reveal-sparkle:nth-child(19) { top: 85%; right: 25%; left: auto; }
+.reveal-sparkle:nth-child(20) { top: 88%; right: 10%; left: auto; }
+.reveal-sparkle:nth-child(21) { top: 20%; left: 45%; }
+.reveal-sparkle:nth-child(22) { top: 55%; left: 48%; }
+.reveal-sparkle:nth-child(23) { top: 75%; left: 48%; }
+.reveal-sparkle:nth-child(24) { top: 40%; left: 50%; }
+
+@keyframes revealSparkle {
+  0%, 100% { opacity: 0.4; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.gift-reveal-hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.reveal-heart {
+  position: absolute;
+  font-size: 0.9rem;
+  color: #ff9aad;
+  opacity: 0.85;
+  animation: revealHeart 2s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+.reveal-heart:nth-child(1) { top: 10%; left: 18%; }
+.reveal-heart:nth-child(2) { top: 18%; right: 15%; left: auto; }
+.reveal-heart:nth-child(3) { top: 22%; left: 8%; }
+.reveal-heart:nth-child(4) { top: 32%; right: 12%; left: auto; }
+.reveal-heart:nth-child(5) { top: 38%; left: 15%; }
+.reveal-heart:nth-child(6) { top: 42%; right: 20%; left: auto; }
+.reveal-heart:nth-child(7) { top: 55%; left: 10%; }
+.reveal-heart:nth-child(8) { top: 58%; right: 15%; left: auto; }
+.reveal-heart:nth-child(9) { top: 70%; left: 18%; }
+.reveal-heart:nth-child(10) { top: 72%; right: 22%; left: auto; }
+.reveal-heart:nth-child(11) { top: 80%; left: 12%; }
+.reveal-heart:nth-child(12) { top: 85%; right: 18%; left: auto; }
+.reveal-heart:nth-child(13) { top: 15%; left: 42%; }
+.reveal-heart:nth-child(14) { top: 48%; left: 42%; }
+.reveal-heart:nth-child(15) { top: 65%; left: 45%; }
+.reveal-heart:nth-child(16) { top: 35%; right: 35%; left: auto; }
+
+@keyframes revealHeart {
+  0%, 100% { opacity: 0.5; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+.gift-reveal-text {
+  position: relative;
+  z-index: 1;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #c75d7a;
+  margin: 0 0 0.25rem;
+  text-shadow: 0 2px 12px rgba(199, 93, 122, 0.3);
+  animation: lovePop 0.6s ease-out;
+}
+
+.gift-reveal-sub {
+  position: relative;
+  z-index: 1;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.35rem;
+  color: #b84d6a;
+  margin: 0;
+  opacity: 0.95;
+  animation: lovePop 0.6s ease-out 0.15s both;
+}
+
+@keyframes lovePop {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .card-hearts {
   display: flex;
   justify-content: center;
@@ -649,6 +1023,12 @@
   }
   .flip-back-text {
     font-size: 0.75rem;
+  }
+  .gift-reveal-text {
+    font-size: 2.25rem;
+  }
+  .gift-reveal-sub {
+    font-size: 1.15rem;
   }
 }
 
@@ -690,5 +1070,21 @@
   }
   .flip-back-text {
     font-size: 0.65rem;
+  }
+  .gift-box-page-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .gift-box-wrap {
+    min-height: 240px;
+  }
+  .gift-reveal-text {
+    font-size: 1.9rem;
+  }
+  .gift-reveal-sub {
+    font-size: 1rem;
+  }
+  .gift-reveal {
+    padding: 1.5rem 2rem;
   }
 }

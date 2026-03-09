@@ -32,8 +32,8 @@ function FlipCardsSection() {
         {PHOTOS.map((photo, index) => (
           <FlipCard key={index} photo={photo} />
         ))}
-      </div><br />
-      <p className="flip-hint">Hover over a photo to flip</p>
+      </div>
+      <p className="flip-hint">Hover over a photo to flip </p>
     </section>
   );
 }
