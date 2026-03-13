@@ -5,6 +5,7 @@ import FloatingDesigns from './components/FloatingDesigns';
 import BirthdayCard from './components/BirthdayCard';
 import FlipCardsSection from './components/FlipCardsSection';
 import GiftBox from './components/GiftBox';
+import Memories from './components/Memories';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </section>
       <section className="third-module">
         <GiftBox />
+      </section>
+      <section className="fourth-module">
+        <Memories />
       </section>
     </div>
   );

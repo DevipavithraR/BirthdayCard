@@ -625,6 +625,110 @@
   z-index: 1;
 }
 
+/* Fourth module - Memories (left-aligned) */
+.fourth-module {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 2rem 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.memories-section {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.memories-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #b84d6a;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+/* Cards in a row - full width, side by side */
+.memories-cards-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.memories-card {
+  flex: 1;
+  min-width: 0;
+  background: linear-gradient(145deg, #ffffff 0%, #fff8fa 50%, #ffe8ef 100%);
+  border-radius: 28px;
+  padding: 2rem 1.75rem;
+  box-shadow:
+    0 20px 60px rgba(255, 182, 193, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 182, 193, 0.4);
+  text-align: left;
+}
+
+.memories-card-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b84d6a;
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.memories-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.memories-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #8b5a6b;
+}
+
+.memories-item:last-child {
+  margin-bottom: 0;
+}
+
+.memories-bullet {
+  color: #ff9aad;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.memories-text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .memories-cards-wrap {
+    flex-wrap: wrap;
+  }
+  .memories-card {
+    min-width: 240px;
+    flex: 1 1 240px;
+  }
+}
+
 .gift-box-page {
   width: 100%;
   max-width: 600px;
@@ -667,7 +771,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 420px;
+  max-width: 600px;
   width: 100%;
 }
 
