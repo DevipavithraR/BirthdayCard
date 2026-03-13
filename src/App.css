@@ -655,6 +655,15 @@
   text-align: center;
 }
 
+.memories-subtitle{
+  font-family:  'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b84d6a;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
 /* Cards in a row - full width, side by side */
 .memories-cards-wrap {
   display: flex;
@@ -716,6 +725,156 @@
 }
 
 .memories-text {
+  flex: 1;
+}
+
+/* Fifth module - My Fav (center position) */
+.fifth-module {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.myfav-section {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myfav-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b84d6a;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.myfav-card {
+  width: 100%;
+  background: linear-gradient(145deg, #ffffff 0%, #fff8fa 50%, #ffe8ef 100%);
+  border-radius: 28px;
+  padding: 2.5rem 2rem;
+  box-shadow:
+    0 20px 60px rgba(255, 182, 193, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 182, 193, 0.4);
+  text-align: left;
+}
+
+.myfav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.myfav-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #8b5a6b;
+}
+
+.myfav-item:last-child {
+  margin-bottom: 0;
+}
+
+.myfav-bullet {
+  color: #ff9aad;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.myfav-text {
+  flex: 1;
+}
+
+/* Sixth module - Sorry (center position, list model) */
+.sixth-module {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.sorry-section {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sorry-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b84d6a;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.sorry-card {
+  width: 100%;
+  background: linear-gradient(145deg, #ffffff 0%, #fff8fa 50%, #ffe8ef 100%);
+  border-radius: 28px;
+  padding: 2.5rem 2rem;
+  box-shadow:
+    0 20px 60px rgba(255, 182, 193, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 182, 193, 0.4);
+  text-align: left;
+}
+
+.sorry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sorry-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #8b5a6b;
+}
+
+.sorry-item:last-child {
+  margin-bottom: 0;
+}
+
+.sorry-bullet {
+  color: #ff9aad;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.sorry-text {
   flex: 1;
 }
 

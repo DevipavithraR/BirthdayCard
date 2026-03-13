@@ -6,6 +6,8 @@ import BirthdayCard from './components/BirthdayCard';
 import FlipCardsSection from './components/FlipCardsSection';
 import GiftBox from './components/GiftBox';
 import Memories from './components/Memories';
+import MyFav from './components/MyFav';
+import Sorry from './components/Sorry';
 
 function App() {
   return (
@@ -24,6 +26,12 @@ function App() {
       </section>
       <section className="fourth-module">
         <Memories />
+      </section>
+      <section className="fifth-module">
+        <MyFav />
+      </section>
+      <section className="sixth-module">
+        <Sorry />
       </section>
     </div>
   );
