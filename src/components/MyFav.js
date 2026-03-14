@@ -24,6 +24,11 @@ function MyFav() {
             </li>
           ))}
         </ul>
+        <div className="card-hearts">
+          <span className="inline-heart">♥</span>
+          <span className="inline-heart">♥</span>
+          <span className="inline-heart">♥</span>
+        </div>
       </div>
     </section>
   );

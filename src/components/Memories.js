@@ -13,8 +13,10 @@ const MEMORY_CARDS = [
       'First time yaarukkittayum ipdi oru feel vanthathey illa, oru sandaila inimey pesavey vendam just friends nu sollitteenga appo oru 3 days kitta pesalaa enga veetla eh kettanga yen ipdi irukka nu avlo pain, avlo azhugai, yaarukkagavum ivlo feel pannathey illa. just vantha ok illanah pottum nu vitruven.aana thrla unga kitta ippovara apdi thonalaa thrlaa romba love pannitten nu nenaikken.. :)',
       'Naa konjam mature thn, ellamey think pannuven aana unga visayathula apdiyea opposite, oru chinna pulla maathiri behave pantren.. romba attach aagitten... athn ethum yosikkama pesiruthen...',
     'Ennoda character epdi, naa epdi behave pannuven ithellam theriyamaiyea enna understand pannikkitteenga..... athn main reason ivloo seekrama attach aanathukku... ithuvaraikkum yaarum enna ivlo understand pannathu illaa.Naa openup aaga maatten avlo seekrama.En life la enna nadakku nu ellam share pantra orey person neenga thn ithuvaraikkum yaaru kittayum ethum share pannathu illa...',
-     'Actual ah enakku di nu koptalehh pudikkaathuu....ippolam atha romba miss pantren.......... :('
+     'Actual ah enakku di nu koptalehh pudikkaathuu....ippolam atha romba miss pantren.......... :(',
+     
     ], 
+
   },
   {
     title: '',
@@ -65,10 +67,16 @@ function Memories() {
                   <span className="memories-text">{text}</span>
                 </li>
               ))}
-            </ul>
+            </ul> <div className="card-hearts">
+          <span className="inline-heart">♥</span>
+          <span className="inline-heart">♥</span>
+          <span className="inline-heart">♥</span>
+        </div>
           </div>
+          
         ))}
       </div>
+     
     </section>
   );
 }
