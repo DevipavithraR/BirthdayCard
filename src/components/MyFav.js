@@ -7,7 +7,7 @@ const FAVS = [
   'Enna di nu soltrathuu pavi nu kopdurathuu.. ippolam name solli kooda kopdrathu illaa  :)',
   'Enkitta ethaiyumeh sollama irukka maatteenga open ah pesuveenga athu romba pudikkum.',
   'Enakku neenga advice pantrathu romba pudikkum, enakku therinju enakku close ah irukkuravangalukku naa enakku therinjathulam share pannuven aana unga kitta eppovumey apdi irunthathu illa neenga soltrathulam kekkanum nu thonum.',
-  'Almost namma ofc la ella place la yum namma memories irukku... enakku antha ofc pudikkala naalum neraiya memories irukku angaa.. Eppovumey athellam marakka maatten.',
+  'Namma ofc romba pudikkum... athuthn reason namma pesa start pannathukku naa inga varala nah namma meet panniruppoma nu thrla...',
   'Unnakku ethumey thrla nu solluveengala athum pudikkum... yennah unga kitta mattumthn naa ipdi irukken.'
 ];
 
