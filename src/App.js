@@ -27,11 +27,11 @@ function App() {
       <section className="fourth-module">
         <Memories />
       </section>
-      <section className="fifth-module">
-        <MyFav />
-      </section>
       <section className="sixth-module">
         <Sorry />
+      </section>
+      <section className="fifth-module">
+        <MyFav />
       </section>
     </div>
   );
